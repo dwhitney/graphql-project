@@ -100,7 +100,7 @@ class Comment extends Component {
     }
 
     if (!this.state.queriedKids) {
-      return <a href="#" onClick={() => this.queryKids()}>Show Kids</a>
+      return <a href="javascript:void(0)" onClick={() => this.queryKids()}>Show Kids</a>
     }
 
     return this.state.queriedKids.map((kid, i) =>
